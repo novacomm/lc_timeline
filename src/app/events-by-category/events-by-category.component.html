@@ -1,0 +1,127 @@
+<div class="category-{{category_position}} section-eu-timeline section-eu-timeline-categories">
+    <main>
+        <div class="page-content">
+            <div class="ecl-container ecl-u-mv-l">
+                <h1 class="ecl-heading ecl-heading--h1">{{additionalLabelsService.getLabel('miscelaneous', 'heading_eu_timeline')}}</h1>
+                <section class="section ecl-col-md-12">
+                    <section class="block-views block-views-eu-timeline-taxonomy-block-1 block__content ecl-clearfix first odd weight-0" id="block-views-eu-timeline-taxonomy-block-1">
+                        <div class="block__content ecl-editor">
+                            <div class="view view- view-id- view-display-id-block_1">
+                                <div class="view-content">
+                                    <div class="form">
+                                        <div class="container-inline">
+                                            <div class="ecl-u-mt-m form-item form-item-jump form-type-select jquery-once-1-processed custom-select">
+                                                <div [ngClass]="{'select-arrow-active' : expand_bubble === 'categories', 'select-selected' : 1}" (click)="expand_bubble === 'categories' ? expand_bubble = '' : expand_bubble = 'categories'">{{category ? category.name : ''}}</div>
+                                                <div class="select-items toggled" *ngIf="expand_bubble === 'categories'">
+                                                    <div *ngFor="let _category of categories; let _category_position= index;" [ngClass]="{'same-as-selected' : _category_position+1 == category_position}" [routerLink]="['/categories', helperService.convertToSlug(_category.name)]">
+                                                        {{_category.name}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="term-listing-heading">
+                        <div id="taxonomy-term-112" class="taxonomy-term vocabulary-eu-timeline-categories">
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ecl-container">
+                        <a class="ecl-link back-to-overview-btn icon-arrow-down" [routerLink]="['/']" title="Back to the homepage">{{additionalLabelsService.getLabel('miscelaneous', 'button_back_to_the_homepage')}}</a>
+                        <app-top-buttons [expand_bubble]="expand_bubble"></app-top-buttons>
+                    </div>
+                    <div class="ecl-container">
+                        <div *ngIf="period && category">
+                            <owl-carousel-o [options]="customOptions" #owlElement>
+                                <ng-container *ngFor="let _period of periods">
+                                    <ng-template carouselSlide [id]="_period.id">
+                                        <a [routerLink]="['/categories', helperService.convertToSlug(category.name),'periods', helperService.convertToSlug(_period.name)]" [ngClass]="{'selected-period' : _period.id == period.id, 'ecl-link eu-timeline-period' : 1}">{{helperService.periodYearsRangeTitle(_period)}}</a>
+                                    </ng-template>
+                                </ng-container>
+                            </owl-carousel-o>
+                        </div>
+                        <div class="hide-in-screen print-header">
+                            <h2 class="app-title">{{additionalLabelsService.getLabel('miscelaneous', 'heading_eu_timeline')}}</h2>
+                            <h3 class="category-name">{{period ? period.name : ''}}</h3>
+                            <h4>{{period ? helperService.getYearFromDateStr(period.date) : ''}} - {{period ? helperService.getYearFromDateStr(period.end_date) : ''}} {{period ? period.name : ''}}</h4>
+                        </div>
+                        <div class="hide-in-print category-main-heading-block">
+                            <div class="category-main-title">
+                                <h2 id="eu-timeline-period-placeholder">{{period ? helperService.getYearFromDateStr(period.date) : ''}} - {{period ? helperService.getYearFromDateStr(period.end_date) : ''}}</h2>
+                            </div>
+                            <div class="category-tilte-event-number">
+                                <div id="eu-timeline-period-name-placeholder" class="category-year-title">{{period ? period.name : ''}}</div>
+                                <div id="eu-timeline-events-counter-placeholder" class="event-number">{{timeline_events.length}} {{timeline_events.length == 1 ? additionalLabelsService.getLabel('miscelaneous', 'label_event') : additionalLabelsService.getLabel('miscelaneous', 'label_events')}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="events-list">
+                        <div class="eu-timeline-events-placeholder ecl-container eu-timeline-js-processed" *ngFor="let event of timeline_events; let event_position = index;">
+                            <div *ngIf="
+                          event_position == 0 || 
+                            (
+                              event_position > 0 &&
+                              differentYears(event.start_date, timeline_events[event_position-1].start_date)
+                            )
+                          ">
+                                <div class="eu-timeline-year-placeholder-heading hide-in-print">
+                                    <h2>{{helperService.getYearFromDateStr(event.start_date)}}</h2>
+                                </div>
+                                <div class="eu-timeline-year-placeholder-heading hide-in-screen">
+                                    <h2>{{helperService.getYearFromDateStr(event.start_date)}}</h2>
+                                    <div class="category-tilte-event-number">
+                                        <div id="eu-timeline-events-counter-placeholder" class="event-number">{{timeline_events.length}} {{timeline_events.length == 1 ? additionalLabelsService.getLabel('miscelaneous', 'label_event') : additionalLabelsService.getLabel('miscelaneous', 'label_events')}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ecl-container">
+                                <div class="ecl-row">
+                                    <div class="eu-timeline-event eu-timeline-event-txt ecl-col ecl-col-sm-12 ecl-col-md-6 ecl-col-xl-6">
+                                        <h3>{{event.title}}</h3>
+                                        <div class="event-date">{{helperService.formatDate(event.start_date, event.date_format)}}
+                                            <span *ngIf="event.end_date"> - {{helperService.formatDate(event.end_date, event.date_format)}}</span>
+                                        </div>
+                                        <div class="event-paragraph">
+                                            <p>{{event.body}}</p>
+                                        </div>
+                                    </div>
+                                    <div *ngIf="event.media.length > 0" class="eu-timeline-event eu-timeline-event-media ecl-col ecl-col-sm-12 ecl-col-md-6 ecl-col-xl-6">
+                                        <div class="event-media">
+                                            <span id="file-1379--2" class="file file-image file-image-jpeg file--image">
+                                                <div [innerHTML]="event.media[0].rendered"></div>
+                                                <div>
+                                                    <div class="ecl-field__body">
+                                                        {{event.media[0].caption}}
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="share-edit-btns ecl-col ecl-col-sm-12 ecl-col-md-12 ecl-col-xl-12">
+                                        <div class="share-edit-btns-inner ecl-col ecl-col-sm-12 ecl-col-md-6 ecl-col-xl-6">
+                                            <div class="share-block">
+                                                <div *ngIf="expand_bubble === 'share-event-' + event_position" class="eu-timeline-share-list" data-nosnippet="true">
+                                                    <ul class="wtShareNetworks">
+                                                        <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_twitter" [href]="twitterUrl()" tabindex="0" rel="noopener noreferrer" title="Twitter" style="cursor: pointer;">Twitter</a></li>
+                                                        <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_facebook" [href]="facebookUrl()" tabindex="0" rel="noopener noreferrer" title="Facebook" style="cursor: pointer;">Facebook</a></li>
+                                                        <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_linkedin" [href]="linkedinUrl()" tabindex="0" rel="noopener noreferrer" title="LinkedIn" style="cursor: pointer;">LinkedIn</a></li>
+                                                    </ul>
+                                                </div>
+                                                 <a (click)="expand_bubble = 'share-event-' + event_position" class="eu-timeline-share-btn eu-timeline-event-share-btn ecl-icon ecl-icon--rounded ecl-u-bg-secondary icon-share" alt="Share this event"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <box-periods></box-periods>
+                </section>
+            </div>
+        </div>
+    </main>
+</div>

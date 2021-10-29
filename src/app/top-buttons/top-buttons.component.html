@@ -1,0 +1,21 @@
+<div class="share-print-btns">
+    <div class="print-block">
+        <a class="ecl-icon ecl-icon--rounded ecl-link eu-timeline-print-btn eu-timeline-print-page icon-print" (clickOutside)="expand_bubble = ''" [exclude]="'.share-print-btns *'" (click)="expand_bubble = 'print'" title="Print this page"></a>
+        <div class="eu-timeline-print-list toggled" *ngIf="expand_bubble === 'print'">
+            <ul>
+                <li><a onclick="window.print();" href="#">{{additionalLabelsService.getLabel('miscelaneous', 'button_print_this_page')}}</a></li>
+                <li><a (click)="printExternal('#all-events')">{{additionalLabelsService.getLabel('miscelaneous', 'button_print_out_the_whole_eu_timeline')}}</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="share-block" style="float: left;">
+        <a class="eu-timeline-share-btn ecl-icon ecl-icon--rounded icon-share" title="Share" (click)="expand_bubble = 'share'"></a>
+        <div class="eu-timeline-share-list" *ngIf="expand_bubble === 'share'">
+            <ul class="wtShareNetworks">
+                <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_twitter" [href]="twitterUrl()" rel="noopener noreferrer" title="Twitter" style="cursor: pointer;">Twitter</a></li>
+                <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_facebook" [href]="facebookUrl()" rel="noopener noreferrer" title="Facebook" style="cursor: pointer;">Facebook</a></li>
+                <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_linkedin" [href]="linkedinUrl()" rel="noopener noreferrer" title="LinkedIn" style="cursor: pointer;">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

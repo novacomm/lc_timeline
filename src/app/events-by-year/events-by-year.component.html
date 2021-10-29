@@ -1,0 +1,371 @@
+<div class="period-{{period ? helperService.convertToSlug(period.name) : ''}} period-{{period_position}} page-eu-timeline section-eu-timeline page-eu-timeline-year eu-timeline-auto-width">
+    <main>
+        <div class="page-content">
+            <div class="ecl-container ecl-u-mv-l">
+                <h1 class="ecl-heading ecl-heading--h1">{{additionalLabelsService.getLabel('miscelaneous', 'heading_eu_timeline')}}</h1>
+                <section class="section">
+                    <section class="hide-in-print block-views block-views-eu-timeline-taxonomy-block-1 block__content ecl-clearfix first odd weight-0" id="block-views-eu-timeline-taxonomy-block-1">
+                        <div class="block__content ecl-editor">
+                            <div class="view view- view-id- view-display-id-block_1">
+                                <div class="view-content">
+                                    <div class="form">
+                                        <div class="container-inline">
+                                            <div class="ecl-u-mt-m form-item form-item-jump form-type-select jquery-once-1-processed custom-select">
+                                                <div [ngClass]="{'select-arrow-active' : expand_bubble === 'periods', 'select-selected' : 1}" (click)="expand_bubble === 'periods' ? expand_bubble = '' : expand_bubble = 'periods'">{{period ? helperService.periodYearsRangeTitle(period) + period.name : ''}}</div>
+                                                <div class="select-items toggled" *ngIf="expand_bubble === 'periods'">
+                                                    <div *ngFor="let _period of periods; let _period_position= index;" [ngClass]="{'same-as-selected' : _period_position+1 == period_position}" [routerLink]="['/years', helperService.getYearFromDateStr(_period.date)]">
+                                                        {{helperService.periodYearsRangeTitle(_period) + _period.name}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="hide-in-print ecl-container">
+                        <a class="ecl-link back-to-overview-btn icon-arrow-down" [routerLink]="['/']" title="Back to the homepage">{{additionalLabelsService.getLabel('miscelaneous', 'button_back_to_the_homepage')}}</a>
+                        <app-top-buttons [expand_bubble]="expand_bubble"></app-top-buttons>
+                    </div>
+                    <div id="eu-timeline-banner-placeholder" class="hide-in-print">
+                        <div id="eu-timeline-period-banner" *ngIf="period_position == '1'">
+                            <div class="viewarea">
+                                <div class="container">
+                                    <div class="clouds">
+                                        <div class="cloud x1">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x2">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x3">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x4">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x5">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                    </div>
+                                    <div class="plane">
+                                        <img alt="" src="{{helperService.assets_location}}/1-plane.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="buildings">
+                                        <img alt="" src="{{helperService.assets_location}}/1-buildings.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-a">
+                                        <img alt="" src="{{helperService.assets_location}}/1-building-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-b">
+                                        <img alt="" src="{{helperService.assets_location}}/1-building-b.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-c">
+                                        <img alt="" src="{{helperService.assets_location}}/1-building-c.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="street">
+                                        <img alt="" src="{{helperService.assets_location}}/1-canvas.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="tree-a">
+                                        <img alt="" src="{{helperService.assets_location}}/1-tree-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="carriage">
+                                        <img alt="" src="{{helperService.assets_location}}/1-carriage.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="car">
+                                        <img alt="" src="{{helperService.assets_location}}/1-car.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="man-a">
+                                        <img alt="" src="{{helperService.assets_location}}/1-man-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="woman-a">
+                                        <img alt="" src="{{helperService.assets_location}}/1-woman-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="warisover">
+                                        <img alt="" src="{{helperService.assets_location}}/1-warisover.svg" typeof="foaf:Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="eu-timeline-period-banner" *ngIf="period_position == '2'" class="eu-timeline-period-1946-1959">
+                            <div class="viewarea">
+                                <div class="container">
+                                    <div class="clouds">
+                                        <div class="cloud x1">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x2">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x3">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x4">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x5">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                    </div>
+                                    <div class="plane">
+                                        <img alt="" src="{{helperService.assets_location}}/2-plane.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="buildings">
+                                        <img alt="" src="{{helperService.assets_location}}/2-buildings.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-b">
+                                        <img alt="" src="{{helperService.assets_location}}/2-building-b.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-c">
+                                        <img alt="" src="{{helperService.assets_location}}/2-building-c.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="street">
+                                        <img alt="" src="{{helperService.assets_location}}/2-canvas.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-a">
+                                        <img alt="" src="{{helperService.assets_location}}/2-building-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="tree-a">
+                                        <img alt="" src="{{helperService.assets_location}}/2-tree-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="family">
+                                        <img alt="" src="{{helperService.assets_location}}/2-family.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="car-a">
+                                        <img alt="" src="{{helperService.assets_location}}/2-car-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="couple">
+                                        <img alt="" src="{{helperService.assets_location}}/2-couple.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="car-b">
+                                        <img alt="" src="{{helperService.assets_location}}/2-car-b.svg" typeof="foaf:Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="eu-timeline-period-banner" *ngIf="period_position == '3'" class="eu-timeline-period-1960-2007">
+                            <div class="viewarea">
+                                <div class="container">
+                                    <div class="clouds">
+                                        <div class="cloud x1">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x2">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x3">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x4">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x5">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                    </div>
+                                    <div class="plane">
+                                        <img alt="" src="{{helperService.assets_location}}/3-plane.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="buildings">
+                                        <img alt="" src="{{helperService.assets_location}}/3-buildings.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-a">
+                                        <img alt="" src="{{helperService.assets_location}}/3-building-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-b">
+                                        <img alt="" src="{{helperService.assets_location}}/3-building-b.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-c">
+                                        <img alt="" src="{{helperService.assets_location}}/3-building-c.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-d">
+                                        <img alt="" src="{{helperService.assets_location}}/3-building-d.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="street">
+                                        <img alt="" src="{{helperService.assets_location}}/3-canvas.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="scating">
+                                        <img alt="" src="{{helperService.assets_location}}/3-scating.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="tree-a">
+                                        <img alt="" src="{{helperService.assets_location}}/3-tree-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="couple-b">
+                                        <img alt="" src="{{helperService.assets_location}}/3-couple-b.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="car-a">
+                                        <img alt="" src="{{helperService.assets_location}}/3-car-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="car-b">
+                                        <img alt="" src="{{helperService.assets_location}}/3-car-b.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="couple-a">
+                                        <img alt="" src="{{helperService.assets_location}}/3-couple-a.svg" typeof="foaf:Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="eu-timeline-period-banner" *ngIf="period_position == '4'" class="eu-timeline-period-2008-today">
+                            <div class="viewarea">
+                                <div class="container">
+                                    <div class="clouds">
+                                        <div class="cloud x1">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x2">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x3">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x4">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                        <div class="cloud x5">
+                                            <img alt="" src="{{helperService.assets_location}}/clouds.svg" typeof="foaf:Image">
+                                        </div>
+                                    </div>
+                                    <div class="plane">
+                                        <img alt="" src="{{helperService.assets_location}}/4-plane.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="buildings">
+                                        <img alt="" src="{{helperService.assets_location}}/4-buildings.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-a">
+                                        <img alt="" src="{{helperService.assets_location}}/4-building-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-b">
+                                        <img alt="" src="{{helperService.assets_location}}/4-building-b.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="building-c">
+                                        <img alt="" src="{{helperService.assets_location}}/4-building-c.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="street">
+                                        <img alt="" src="{{helperService.assets_location}}/4-canvas.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="biker">
+                                        <img alt="" src="{{helperService.assets_location}}/4-biker.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="tree-a">
+                                        <img alt="" src="{{helperService.assets_location}}/4-tree-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="couple-a">
+                                        <img alt="" src="{{helperService.assets_location}}/4-couple-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="car-a">
+                                        <img alt="" src="{{helperService.assets_location}}/4-car-a.svg" typeof="foaf:Image">
+                                    </div>
+                                    <div class="car-b">
+                                        <img alt="" src="{{helperService.assets_location}}/4-car-b.svg" typeof="foaf:Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hide-in-print ecl-container">
+                        <owl-carousel-o [options]="customOptions" #owlElement>
+                            <ng-container *ngFor="let _year of years">
+                                <ng-template carouselSlide [id]="_year">
+                                    <a [routerLink]="['/years', _year]" [ngClass]="{'selected-year' : _year == year, 'ecl-link eu-timeline-period' : 1}">{{_year}}</a>
+                                </ng-template>
+                            </ng-container>
+                        </owl-carousel-o>
+                        <div class="category-main-heading-block">
+                        </div>
+                    </div>
+                    <div class="hide-in-print ecl-container add-event-print">
+                        <a class="add-event-print-btn ecl-link icon-add-note cboxElement" [routerLink]="['add_event']" id="eu-timeline-add-event-btn">{{additionalLabelsService.getLabel('miscelaneous', 'button_add_your_event')}}</a>
+                    </div>
+                    <div class="hide-in-screen print-header">
+                        <h2 class="app-title">{{additionalLabelsService.getLabel('miscelaneous', 'heading_eu_timeline')}}</h2>
+                        <h3 class="period-name">{{period ? helperService.periodYearsRangeTitle(period) + period.name : ''}}</h3>
+                    </div>
+                    <div class="events-list">
+                        <ng-container *ngFor="let event of timeline_events; let event_position = index;">
+                            <ng-container *ngIf="year == helperService.getYearFromDateStr(event.start_date)">
+                                <div class="eu-timeline-events-placeholder ecl-container eu-timeline-js-processed">
+                                    <ng-container *ngIf="
+                                                  event_position == 0 || 
+                                                    (
+                                                      event_position > 0 &&
+                                                      helperService.getYearFromDateStr(event.start_date) !== helperService.getYearFromDateStr(timeline_events[event_position-1].start_date)
+                                                    )
+                                                  ">
+                                        <div class="eu-timeline-year-placeholder-heading">
+                                            <h2>{{helperService.getYearFromDateStr(event.start_date)}}</h2>
+                                            <ng-container *ngIf="additionalLabelsService._language != 'en'">
+                                                <span>{{additionalLabelsService.getLabel('miscelaneous', 'label_events')}}: {{getEventsFromYear(year).length}} </span>
+                                            </ng-container>
+                                            <ng-container *ngIf="additionalLabelsService._language == 'en'">
+                                                <span *ngIf="getEventsFromYear(year).length == 1">{{getEventsFromYear(year).length}} {{additionalLabelsService.getLabel('miscelaneous', 'label_event')}}</span>
+                                                <span *ngIf="getEventsFromYear(year).length > 1">{{getEventsFromYear(year).length}} {{additionalLabelsService.getLabel('miscelaneous', 'label_events')}}</span>
+                                            </ng-container>
+                                        </div>
+                                    </ng-container>
+                                    <div class="ecl-container">
+                                        <div class="ecl-row eu-timeline-event-wrapper">
+                                            <div class="eu-timeline-event eu-timeline-event-txt ecl-col ecl-col-sm-12 ecl-col-md-6 ecl-col-xl-6">
+                                                <div class="event-category-tags">
+                                                    <div class="item-list">
+                                                        <ul>
+                                                            <li *ngFor="let _category of event.category; let _category_position= index;" class="even first last category-{{getCategoryPositionFromID(_category)}}">
+                                                                {{getCategoryNameFromID(_category)}}</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <h3>{{event.title}}</h3>
+                                                <div class="event-date">{{helperService.formatDate(event.start_date, event.date_format)}}
+                                                    <span *ngIf="event.end_date"> - {{helperService.formatDate(event.end_date, event.date_format)}}</span>
+                                                </div>
+                                                <div class="event-paragraph">
+                                                    <p [innerHTML]="event.body"></p>
+                                                </div>
+                                            </div>
+                                            <div *ngIf="event.media.length > 0" class="eu-timeline-event eu-timeline-event-media ecl-col ecl-col-sm-12 ecl-col-md-6 ecl-col-xl-6">
+                                                <div class="event-media">
+                                                    <span id="file-1379--2" class="file file-image file-image-jpeg file--image">
+                                                        <div [innerHTML]="event.media[0].rendered"></div>
+                                                        <div>
+                                                            <div class="ecl-field__body">
+                                                                {{event.media[0].caption}}
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="share-edit-btns ecl-col ecl-col-sm-12 ecl-col-md-12 ecl-col-xl-12">
+                                                <div class="share-edit-btns-inner ecl-col ecl-col-sm-12 ecl-col-md-6 ecl-col-xl-6">
+                                                    <div class="share-block">
+                                                        <div *ngIf="expand_bubble === 'share-event-' + event_position" class="eu-timeline-share-list" data-nosnippet="true">
+                                                            <ul class="wtShareNetworks">
+                                                                <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_twitter" [href]="twitterUrl()" tabindex="0" rel="noopener noreferrer" title="Twitter" style="cursor: pointer;">Twitter</a></li>
+                                                                <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_facebook" [href]="facebookUrl()" tabindex="0" rel="noopener noreferrer" title="Facebook" style="cursor: pointer;">Facebook</a></li>
+                                                                <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_linkedin" [href]="linkedinUrl()" tabindex="0" rel="noopener noreferrer" title="LinkedIn" style="cursor: pointer;">LinkedIn</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- <script type="application/json" data-process="true" data-run="true">
+                                                        { "service": "share", "popup": false, "icon": true, "to": ["twitter", "facebook", "linkedin"], "selection": false, "css": { "list": "eu-timeline-share-list" }, "target": true, "title": "World\u0027s Fair in Paris", "link": "https:\/\/europa.eu\/learning-corner\/eu-timeline\/event\/worlds-fair-in-paris_en" }
+                                                        </script>  -->
+                                                        <a (click)="expand_bubble = 'share-event-' + event_position" class="eu-timeline-share-btn eu-timeline-event-share-btn ecl-icon ecl-icon--rounded ecl-u-bg-secondary icon-share" alt="Share this event"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-container>
+                        </ng-container>
+                        <section class="block-views block-views-eu-timeline-taxonomy-categories block__content ecl-clearfix ecl-container even last weight-2" id="block-views-eu-timeline-taxonomy-categories">
+                            <h3 class="block__title">{{additionalLabelsService.getLabel('miscelaneous', 'heading_navigate_by_category')}}</h3>
+                            <div class="block__content ecl-editor">
+                                <box-categories></box-categories>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <app-event-form *ngIf="show_add_event"></app-event-form>
+</div>

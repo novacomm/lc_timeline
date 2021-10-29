@@ -1,0 +1,169 @@
+@media only screen {
+    .hide-in-screen {
+        display: none;
+    }
+}
+
+@media print {
+
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+
+    html body {
+
+        .share-print-btns-wrapper,
+        .ecl-site-header-standardised,
+        #block-timelineloadblock,
+        #block-ewcms-theme-tabs {
+            display: none;
+        }
+
+        h2,
+        h3,
+        h4 {
+            font-family: 'DejaVu Sans Condensed Bold';
+            font-weight: normal;
+        }
+
+        p {
+            font-family: 'DejaVu Sans Condensed';
+        }
+
+        .overview-page main h2 {
+            font-size: 10.58mm;
+            margin-bottom: 0.6em;
+        }
+
+        .overview-page main h3 {
+            font-size: 5.82mm;
+            margin-bottom: 1em;
+        }
+        main h4 {
+            font-size: 4.82mm;
+            margin-bottom: 1em;
+        }
+
+        .section-eu-timeline:not(.page-eu-timeline-year) main {
+            border-top: 0;
+        }
+
+        .wtLaco,
+        .page-eu-timeline-year main:before,
+        .overview-page section.block-teacherscorner-eu-timeline-eu-timeline-faqs-accordion .ui-accordion .ui-accordion-header:before,
+        .overview-page section.block-teacherscorner-eu-timeline-eu-timeline-faqs-accordion .ui-accordion .ui-accordion-header:after {
+            display: none;
+        }
+
+        .overview-page main:after,
+        .overview-page section.block-teacherscorner-eu-timeline-eu-timeline-faqs-accordion .quick-accordion,
+        .overview-page section.block-teacherscorner-eu-timeline-eu-timeline-faqs-accordion .ui-accordion .ui-accordion-content {
+            background: transparent;
+        }
+
+        #block-teacherscorner-eu-timeline-eu-timeline-faqs-accordion {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .overview-page section.block-teacherscorner-eu-timeline-eu-timeline-faqs-accordion .ui-accordion .ui-accordion-content {
+            padding-top: 0;
+        }
+
+        .overview-page section.block-teacherscorner-eu-timeline-eu-timeline-faqs-accordion .ui-accordion .ui-accordion-header a {
+            font-family: 'DejaVu Sans Condensed Bold';
+        }
+
+        .section-eu-timeline main .eu-timeline-text-wrapper {
+            display: block;
+        }
+
+        .section-eu-timeline main .eu-timeline-text-wrapper .eu-timeline-img {
+            display: block;
+            animation: none;
+        }
+
+        .section-eu-timeline .eu-timeline-text-wrapper {
+            width: auto;
+        }
+
+        .overview-page section.block-teacherscorner-eu-timeline-eu-timeline-faqs-accordion .ui-accordion .ui-accordion-content {
+            -moz-column-gap: normal;
+            column-gap: normal;
+            -moz-column-count: auto;
+            column-count: auto;
+            overflow-x: auto;
+        }
+
+        .hide-in-print {
+            display: none;
+        }
+
+        .print-header {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .print-header .category-name,
+        .print-header .period-name {
+            font-size: 12mm;
+            font-family: 'DejaVu Sans Condensed Bold';
+        }
+
+        .section-eu-timeline .eu-timeline-events-placeholder .eu-timeline-year-placeholder-heading h2 {
+            text-align: left;
+        }
+
+        .section-eu-timeline main .eu-timeline-events-placeholder .ecl-row {
+            border: none;
+        }
+
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder div,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder dl,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder dt,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder dd,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder ul,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder ol,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder li,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder h1,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder h2,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder h3,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder h4,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder h5,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder h6,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder pre,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder form,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder p,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder blockquote,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder th,
+        .section-eu-timeline main .page-content .eu-timeline-events-placeholder td {
+            page-break-inside: auto !important;
+        }
+
+        .page-eu-timeline-year.eu-timeline-auto-width .page-content>.ecl-container.ecl-u-mv-l,
+        .page-eu-timeline-year .page-content {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .section-eu-timeline-categories .category-main-heading-block {
+          text-align: left;
+        }
+
+        .section-eu-timeline main .category-main-heading-block .category-tilte-event-number div {
+          text-align: left;
+        }
+
+        .eu-timeline-year-placeholder-heading.hide-in-screen h2{
+          color:#404040;
+        }
+        .eu-timeline-year-placeholder-heading.hide-in-screen {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+
+    }
+}

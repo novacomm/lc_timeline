@@ -1,0 +1,20 @@
+<section class="hide-in-print block-teacherscorner-eu-timeline block-teacherscorner-eu-timeline-eu-timeline-navigate-by-period ecl-clearfix first last odd weight-0" id="block-teacherscorner-eu-timeline-eu-timeline-navigate-by-period">
+    <div class="block__content">
+        <div class="item-list">
+            <ul class="container">
+                <li *ngFor="let period of periods;let period_position=index;" class="col-1-4 period-{{period_position+1}}">
+                    <a [routerLink]="['/years', helperService.getYearFromDateStr(period.first_year)]" *ngIf="helperService.assets_location !== ''">
+                        <img alt="" src="{{helperService.assets_location}}/period-{{period_position+1}}.png" typeof="foaf:Image">
+                        <div class="actor_{{period_position+1}}-1">
+                            <img alt="" src="{{helperService.assets_location}}/actor_{{period_position+1}}-1.svg" typeof="foaf:Image">
+                        </div>
+                        <div class="actor_{{period_position+1}}-2">
+                            <img alt="" src="{{helperService.assets_location}}/actor_{{period_position+1}}-2.svg" typeof="foaf:Image">
+                        </div>
+                        <span>{{helperService.periodYearsRangeTitle(period)}}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

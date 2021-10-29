@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="189" height="308" viewBox="0.15 0.7 189 308">
+  <path fill="#B7A072" d="M43.85 6.7h101.5v240.1H43.85V6.7z"/>
+  <path opacity=".1" fill="#EFEEED" d="M80.55 6.7h2.5v237.6h-2.5V6.7zm-27.2 0h3v237.6h-3V6.7zm79.9 0h3v237.6h-3V6.7zm-27.1 0h3v237.6h-3V6.7z"/>
+  <path fill="#CCB58B" d="M22.75 61h33.6v185.8h-33.6V61z"/>
+  <path fill="#B7A072" d="M3.15 169.5h19.6v109H3.15v-109z"/>
+  <path fill="#9A957E" d="M166.85 169.5h19.1v109h-19.1v-109z"/>
+  <path fill="#323035" d="M58.45.7h70.8v6h-70.8v-6z"/>
+  <path fill="#7E7471" d="M3.15 278.4h5.5V309h-5.5v-30.6zm177.3 0h5.5V309h-5.5v-30.6z"/>
+  <path fill="#0B3568" d="M9.55 180.1h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M9.55 184.2v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4.1h1l6.4-7.4v-1.2l-7.4 8.6z"/>
+  <path fill="#0B3568" d="M9.55 198.5h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M9.55 202.6v2.3l5.5-6.4h-2l-3.5 4.1zm0 4.1l7-8.2h-.8l-6.2 7.2v1zm0 4h1l6.4-7.4V202l-7.4 8.6v.1z"/>
+  <path fill="#0B3568" d="M9.55 216.9h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M9.55 221v2.4l5.5-6.5h-2l-3.5 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.4-7.4v-1.3l-7.4 8.6v.1z"/>
+  <path fill="#0B3568" d="M9.55 235.3h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M9.55 239.4v2.4l5.5-6.5h-2l-3.5 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.4-7.4v-1.3l-7.4 8.6v.1z"/>
+  <path fill="#0B3568" d="M9.55 253.7h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M9.55 257.8v2.4l5.6-6.5h-2l-3.6 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.4-7.4v-1.3l-7.4 8.6v.1z"/>
+  <path fill="#424242" d="M173.15 180.1h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".7" fill="#FFF" d="M173.15 184.2v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4.1h1l6.4-7.4v-1.2l-7.4 8.6z"/>
+  <path fill="#424242" d="M173.15 198.5h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".7" fill="#FFF" d="M173.15 202.6v2.3l5.5-6.4h-2l-3.5 4.1zm0 4.1l7-8.2h-.8l-6.2 7.2v1zm0 4h1l6.4-7.4V202l-7.4 8.6v.1z"/>
+  <path fill="#424242" d="M173.15 216.9h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".7" fill="#FFF" d="M173.15 221v2.4l5.5-6.5h-2l-3.5 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.4-7.4v-1.3l-7.4 8.6v.1z"/>
+  <path fill="#424242" d="M173.15 235.3h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".7" fill="#FFF" d="M173.15 239.4v2.4l5.5-6.5h-2l-3.5 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.4-7.4v-1.3l-7.4 8.6v.1z"/>
+  <path fill="#424242" d="M173.15 253.7h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".7" fill="#FFF" d="M173.15 257.8v2.4l5.5-6.5h-2l-3.5 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.4-7.4v-1.3l-7.4 8.6v.1z"/>
+  <path fill="#0B3568" d="M35.45 89.1h7.3v12.2h-7.3V89.1z"/>
+  <path opacity=".4" fill="#FFF" d="M35.45 93.2v2.5l5.5-6.5h-2l-3.5 4zm0 4.1l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.3-7.3v-1.4l-7.3 8.6v.1z"/>
+  <path fill="#0B3568" d="M35.45 174.4h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M35.45 178.5v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.3-7.3v-1.3l-7.3 8.6z"/>
+  <path fill="#0B3568" d="M35.45 191.4h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M35.45 195.5v2.4l5.5-6.5h-2l-3.5 4.1zm0 4.1l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.3-7.3v-1.4l-7.3 8.6v.1z"/>
+  <path fill="#0B3568" d="M35.45 208.5h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M35.45 212.6v2.3l5.5-6.4h-2l-3.5 4.1zm0 4.1l7-8.2h-.8l-6.2 7.2v1zm0 4h1l6.3-7.4V212l-7.3 8.6v.1z"/>
+  <path fill="#0B3568" d="M35.45 225.5h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M35.45 229.7v2.3l5.5-6.5h-2l-3.5 4.2zm0 4l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.3-7.3V229l-7.3 8.6v.1z"/>
+  <path fill="#0B3568" d="M35.45 106.2h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M35.45 110.3v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.3-7.3v-1.3l-7.3 8.6z"/>
+  <path fill="#0B3568" d="M35.45 123.2h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M35.45 127.3v2.4l5.5-6.5h-2l-3.5 4.1zm0 4.1l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.3-7.3v-1.4l-7.3 8.6v.1z"/>
+  <path fill="#0B3568" d="M35.45 140.3h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M35.45 144.4v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.3-7.3v-1.3l-7.3 8.6z"/>
+  <path fill="#0B3568" d="M35.45 157.3h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M35.45 161.4v2.4l5.5-6.5h-2l-3.5 4.1zm0 4.1l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.3-7.3v-1.5l-7.3 8.6v.2z"/>
+  <path fill="#0B3568" d="M66.25 71.8h7.3V84h-7.3V71.8z"/>
+  <path opacity=".4" fill="#FFF" d="M66.25 75.9v2.4l5.6-6.5h-2l-3.6 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.4-7.4v-1.3l-7.5 8.6.1.1z"/>
+  <path fill="#0B3568" d="M66.25 88.9h7.3v12.2h-7.3V88.9z"/>
+  <path opacity=".4" fill="#FFF" d="M66.25 93v2.3l5.6-6.4h-2l-3.6 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4v.1h1l6.4-7.4v-1.3l-7.4 8.6z"/>
+  <path fill="#0B3568" d="M66.25 174.3h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M66.25 178.4v2.3l5.6-6.4h-2l-3.6 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4v.1h1l6.4-7.4v-1.3l-7.4 8.6z"/>
+  <path fill="#0B3568" d="M66.25 191.4h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M66.25 195.5v2.3l5.6-6.4h-2l-3.6 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.4-7.3v-1.3l-7.4 8.6z"/>
+  <path fill="#0B3568" d="M66.25 208.5h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M66.25 212.5v2.4l5.6-6.4h-2l-3.6 4zm0 4.1l7-8.1h-.8l-6.2 7.2v.9zm0 4.1h1l6.4-7.4v-1.4l-7.4 8.6v.2z"/>
+  <path fill="#0B3568" d="M66.25 225.5h7.3v12.2h-7.3v-12.2z"/>
+  <path opacity=".4" fill="#FFF" d="M66.25 229.7v2.3l5.6-6.5h-2l-3.6 4.2zm0 4l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.4-7.3V229l-7.5 8.7h.1z"/>
+  <path fill="#0B3568" d="M66.25 106h7.3v12.2h-7.3V106z"/>
+  <path opacity=".4" fill="#FFF" d="M66.25 110.1v2.3l5.6-6.4h-2l-3.6 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.4-7.3v-1.3l-7.4 8.6z"/>
+  <path fill="#0B3568" d="M66.25 20.6h7.3v12.2h-7.3V20.6z"/>
+  <path opacity=".4" fill="#FFF" d="M66.25 24.7V27l5.6-6.4h-2l-3.6 4.1zm0 4l7-8.1h-.8l-6.2 7.1v1zm0 4h1l6.4-7.3v-1.3l-7.5 8.6h.1z"/>
+  <path fill="#0B3568" d="M66.25 37.7h7.3v12.2h-7.3V37.7z"/>
+  <path opacity=".4" fill="#FFF" d="M66.25 41.7v2.4l5.6-6.4h-2l-3.6 4zm0 4l7-8h-.8l-6.2 7.2v.8zm0 4.1h1l6.4-7.3v-1.3l-7.5 8.5.1.1z"/>
+  <g>
+    <path fill="#0B3568" d="M66.25 54.7h7.3v12.2h-7.3V54.7z"/>
+    <path opacity=".4" fill="#FFF" d="M66.25 58.8v2.4l5.6-6.5h-2l-3.6 4.1zm0 4.1l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.4-7.3v-1.4l-7.5 8.6.1.1z"/>
+  </g>
+  <g>
+    <path fill="#0B3568" d="M66.25 123.1h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".4" fill="#FFF" d="M66.25 127.1v2.4l5.6-6.4h-2l-3.6 4zm0 4.1l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.4-7.3v-1.3l-7.4 8.5v.1z"/>
+  </g>
+  <g>
+    <path fill="#0B3568" d="M66.25 140.1h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".4" fill="#FFF" d="M66.25 144.2v2.4l5.6-6.5h-2l-3.6 4.1zm0 4.1l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.4-7.3v-1.4l-7.4 8.6v.1z"/>
+  </g>
+  <g>
+    <path fill="#0B3568" d="M66.25 157.2h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".4" fill="#FFF" d="M66.25 161.3v2.4l5.6-6.5h-2l-3.6 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.4-7.4v-1.3l-7.4 8.6v.1z"/>
+  </g>
+  <g>
+    <path fill="#0B3568" d="M91.35 71.8h7.3V84h-7.3V71.8z"/>
+    <path opacity=".4" fill="#FFF" d="M91.35 75.9v2.4l5.5-6.5h-2l-3.5 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.4-7.4v-1.3l-7.4 8.6v.1z"/>
+    <path fill="#0B3568" d="M91.35 88.9h7.3v12.2h-7.3V88.9z"/>
+    <path opacity=".4" fill="#FFF" d="M91.35 93v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4v.1h1l6.4-7.4v-1.3l-7.4 8.6z"/>
+    <path fill="#0B3568" d="M91.35 174.3h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".4" fill="#FFF" d="M91.35 178.4v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4v.1h1l6.4-7.4v-1.3l-7.4 8.6z"/>
+    <path fill="#0B3568" d="M91.35 191.4h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".4" fill="#FFF" d="M91.35 195.5v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.4-7.3v-1.3l-7.4 8.6z"/>
+    <path fill="#0B3568" d="M91.35 208.5h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".4" fill="#FFF" d="M91.35 212.5v2.4l5.5-6.4h-2l-3.5 4zm0 4.1l7-8.1h-.8l-6.2 7.2v.9zm0 4.1h1l6.4-7.4v-1.4l-7.4 8.6v.2z"/>
+    <path fill="#0B3568" d="M91.35 225.5h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".4" fill="#FFF" d="M91.35 229.7v2.3l5.5-6.5h-2l-3.5 4.2zm0 4l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.4-7.3V229l-7.4 8.6v.1z"/>
+    <path fill="#0B3568" d="M91.35 106h7.3v12.2h-7.3V106z"/>
+    <path opacity=".4" fill="#FFF" d="M91.35 110.1v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.4-7.3v-1.3l-7.4 8.6z"/>
+    <path fill="#0B3568" d="M91.35 20.6h7.3v12.2h-7.3V20.6z"/>
+    <path opacity=".4" fill="#FFF" d="M91.35 24.7V27l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.1v1zm0 4h1l6.4-7.3v-1.3l-7.4 8.6z"/>
+    <path fill="#0B3568" d="M91.35 37.7h7.3v12.2h-7.3V37.7z"/>
+    <path opacity=".3" fill="#FFF" d="M91.35 41.7v2.4l5.5-6.4h-2l-3.5 4zm0 4l7-8h-.8l-6.2 7.2v.8zm0 4.1h1l6.4-7.3v-1.3l-7.4 8.5v.1z"/>
+    <g>
+      <path fill="#0B3568" d="M91.35 54.7h7.3v12.2h-7.3V54.7z"/>
+      <path opacity=".3" fill="#FFF" d="M91.35 58.8v2.4l5.5-6.5h-2l-3.5 4.1zm0 4.1l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.4-7.3v-1.4l-7.4 8.6v.1z"/>
+    </g>
+    <g>
+      <path fill="#0B3568" d="M91.35 123.1h7.3v12.2h-7.3v-12.2z"/>
+      <path opacity=".4" fill="#FFF" d="M91.35 127.1v2.4l5.5-6.4h-2l-3.5 4zm0 4.1l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.4-7.3v-1.3l-7.4 8.5v.1z"/>
+    </g>
+    <g>
+      <path fill="#0B3568" d="M91.35 140.1h7.3v12.2h-7.3v-12.2z"/>
+      <path opacity=".4" fill="#FFF" d="M91.35 144.2v2.4l5.5-6.5h-2l-3.5 4.1zm0 4.1l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.4-7.3v-1.4l-7.4 8.6v.1z"/>
+    </g>
+    <g>
+      <path fill="#0B3568" d="M91.35 157.2h7.3v12.2h-7.3v-12.2z"/>
+      <path opacity=".4" fill="#FFF" d="M91.35 161.3v2.4l5.5-6.5h-2l-3.5 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.4-7.4v-1.3l-7.4 8.6v.1z"/>
+    </g>
+  </g>
+  <g>
+    <path fill="#0B3568" d="M116.45 71.8h7.3V84h-7.3V71.8z"/>
+    <path opacity=".4" fill="#FFF" d="M116.45 75.9v2.4l5.5-6.5h-2l-3.5 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.3-7.4v-1.3l-7.3 8.6v.1z"/>
+    <path fill="#0B3568" d="M116.45 88.9h7.3v12.2h-7.3V88.9z"/>
+    <path opacity=".4" fill="#FFF" d="M116.45 93v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4v.1h1l6.3-7.4v-1.3l-7.3 8.6z"/>
+    <path fill="#0B3568" d="M116.45 174.3h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".4" fill="#FFF" d="M116.45 178.4v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4v.1h1l6.3-7.4v-1.3l-7.3 8.6z"/>
+    <path fill="#0B3568" d="M116.45 191.4h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".4" fill="#FFF" d="M116.45 195.5v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.3-7.3v-1.3l-7.3 8.6z"/>
+    <path fill="#0B3568" d="M116.45 208.5h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".4" fill="#FFF" d="M116.45 212.5v2.4l5.5-6.4h-2l-3.5 4zm0 4.1l7-8.1h-.8l-6.2 7.2v.9zm0 4.1h1l6.3-7.4v-1.4l-7.3 8.6v.2z"/>
+    <path fill="#0B3568" d="M116.45 225.5h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".4" fill="#FFF" d="M116.45 229.7v2.3l5.5-6.5h-2l-3.5 4.2zm0 4l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.3-7.3V229l-7.3 8.6v.1z"/>
+    <path fill="#0B3568" d="M116.45 106h7.3v12.2h-7.3V106z"/>
+    <path opacity=".4" fill="#FFF" d="M116.45 110.1v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.3-7.3v-1.3l-7.3 8.6z"/>
+    <path fill="#0B3568" d="M116.45 20.6h7.3v12.2h-7.3V20.6z"/>
+    <path opacity=".4" fill="#FFF" d="M116.45 24.7V27l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.3-7.3v-1.3l-7.3 8.6z"/>
+    <path fill="#0B3568" d="M116.45 37.7h7.3v12.2h-7.3V37.7z"/>
+    <path opacity=".4" fill="#FFF" d="M116.45 41.7v2.4l5.5-6.4h-2l-3.5 4zm0 4l7-8h-.8l-6.2 7.2v.8zm0 4.1h1l6.3-7.3v-1.3l-7.3 8.5v.1z"/>
+    <g>
+      <path fill="#0B3568" d="M116.45 54.7h7.3v12.2h-7.3V54.7z"/>
+      <path opacity=".4" fill="#FFF" d="M116.45 58.8v2.4l5.5-6.5h-2l-3.5 4.1zm0 4.1l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.3-7.3v-1.4l-7.3 8.6v.1z"/>
+    </g>
+    <g>
+      <path fill="#0B3568" d="M116.45 123.1h7.3v12.2h-7.3v-12.2z"/>
+      <path opacity=".4" fill="#FFF" d="M116.45 127.1v2.4l5.5-6.4h-2l-3.5 4zm0 4.1l7-8.1h-.8l-6.2 7.2v.9zm0 4h1l6.3-7.3v-1.3l-7.3 8.5v.1z"/>
+    </g>
+    <g>
+      <path fill="#0B3568" d="M116.45 140.1h7.3v12.2h-7.3v-12.2z"/>
+      <path opacity=".4" fill="#FFF" d="M116.45 144.2v2.4l5.5-6.5h-2l-3.5 4.1zm0 4.1l7-8.2h-.8l-6.2 7.3v.9zm0 4h1l6.3-7.3v-1.4l-7.3 8.6v.1z"/>
+    </g>
+    <g>
+      <path fill="#0B3568" d="M116.45 157.2h7.3v12.2h-7.3v-12.2z"/>
+      <path opacity=".4" fill="#FFF" d="M116.45 161.3v2.4l5.5-6.5h-2l-3.5 4.1zm0 4l7-8h-.8l-6.2 7.1v.9zm0 4.1h1l6.3-7.4v-1.3l-7.3 8.6v.1z"/>
+    </g>
+  </g>
+  <g opacity=".6">
+    <path fill="#997F52" d="M22.75 73.6h33.6v1.5h-33.6v-1.5z"/>
+  </g>
+  <path fill="#323035" d="M18.25 71h38.2v2.5h-38.2V71z"/>
+  <path fill="#B3A796" d="M133.25 61h33.6v185.8h-33.6V61z"/>
+  <g>
+    <path fill="#424242" d="M146.65 89.1h7.3v12.2h-7.3V89.1z"/>
+    <path opacity=".7" fill="#FFF" d="M146.65 93.2v2.5l5.5-6.5h-2l-3.5 4zm0 4.1l7-8.2h-.9l-6.1 7.3v.9zm0 4h1l6.3-7.3v-1.4l-7.3 8.6v.1z"/>
+    <path fill="#424242" d="M146.65 174.4h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".7" fill="#FFF" d="M146.65 178.5v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.9l-6.1 7.2v.9zm0 4h1l6.3-7.3v-1.3l-7.3 8.6z"/>
+    <path fill="#424242" d="M146.65 191.4h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".7" fill="#FFF" d="M146.65 195.5v2.4l5.5-6.5h-2l-3.5 4.1zm0 4.1l7-8.2h-.9l-6.1 7.3v.9zm0 4h1l6.3-7.3v-1.4l-7.3 8.6v.1z"/>
+    <path fill="#424242" d="M146.65 208.5h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".7" fill="#FFF" d="M146.65 212.6v2.3l5.5-6.4h-2l-3.5 4.1zm0 4.1l7-8.2h-.9l-6.1 7.2v1zm0 4h1l6.3-7.4V212l-7.3 8.6v.1z"/>
+    <path fill="#424242" d="M146.65 225.5h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".7" fill="#FFF" d="M146.65 229.7v2.3l5.5-6.5h-2l-3.5 4.2zm0 4l7-8.2h-.9l-6.1 7.3v.9zm0 4h1l6.3-7.3V229l-7.3 8.6v.1z"/>
+    <path fill="#424242" d="M146.65 106.2h7.3v12.2h-7.3v-12.2z"/>
+    <path opacity=".7" fill="#FFF" d="M146.65 110.3v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.9l-6.1 7.2v.9zm0 4h1l6.3-7.3v-1.3l-7.3 8.6z"/>
+    <g>
+      <path fill="#424242" d="M146.65 123.2h7.3v12.2h-7.3v-12.2z"/>
+      <path opacity=".7" fill="#FFF" d="M146.65 127.3v2.4l5.5-6.5h-2l-3.5 4.1zm0 4.1l7-8.2h-.9l-6.1 7.3v.9zm0 4h1l6.3-7.3v-1.4l-7.3 8.6v.1z"/>
+    </g>
+    <g>
+      <path fill="#424242" d="M146.65 140.3h7.3v12.2h-7.3v-12.2z"/>
+      <path opacity=".7" fill="#FFF" d="M146.65 144.4v2.3l5.5-6.4h-2l-3.5 4.1zm0 4l7-8.1h-.9l-6.1 7.2v.9zm0 4h1l6.3-7.3v-1.3l-7.3 8.6z"/>
+    </g>
+    <g>
+      <path fill="#424242" d="M146.65 157.3h7.3v12.2h-7.3v-12.2z"/>
+      <path opacity=".7" fill="#FFF" d="M146.65 161.4v2.4l5.5-6.5h-2l-3.5 4.1zm0 4.1l7-8.2h-.9l-6.1 7.3v.9zm0 4h1l6.3-7.3v-1.5l-7.3 8.6v.2z"/>
+    </g>
+  </g>
+  <g opacity=".4">
+    <defs>
+      <path id="a" d="M133.35 73.1h33.9v1.5h-33.9z"/>
+    </defs>
+    <clipPath id="b">
+      <use xlink:href="#a" overflow="visible"/>
+    </clipPath>
+    <path clip-path="url(#b)" fill="#AC8C6B" d="M133.35 73.1h33.9v1.5h-33.9v-1.5z"/>
+  </g>
+  <path fill="#323035" d="M133.25 71h37.7v2.5h-37.7V71z"/>
+  <g opacity=".5">
+    <path fill="#997F52" d="M3.25 169.4h19.5v1.5H3.25v-1.5z"/>
+    <defs>
+      <path id="c" d="M3.25 169.4h19.5v1.5H3.25z"/>
+    </defs>
+    <clipPath id="d">
+      <use xlink:href="#c" overflow="visible"/>
+    </clipPath>
+    <path clip-path="url(#d)" fill="#997F52" d="M3.25 169.4h19.5v1.5H3.25v-1.5z"/>
+  </g>
+  <path fill="#323035" d="M.15 166.9h22.6v2.5H.15v-2.5z"/>
+  <g opacity=".4">
+    <defs>
+      <path id="e" d="M167.25 169.4h19v1.5h-19z"/>
+    </defs>
+    <clipPath id="f">
+      <use xlink:href="#e" overflow="visible"/>
+    </clipPath>
+    <path clip-path="url(#f)" fill="#AC8C6B" d="M167.25 169.4h19v1.5h-19v-1.5z"/>
+  </g>
+  <path fill="#323035" d="M166.85 166.9h22.6v2.5h-22.6v-2.5z"/>
+  <path fill="#A08A64" d="M22.75 244.3h144.1v64.8H22.75v-64.8z"/>
+  <path fill="#0B3568" d="M69.95 255.8h49.7V309h-49.7v-53.2z"/>
+  <g opacity=".4" fill="#FFF">
+    <path opacity=".7" d="M69.95 280.6v3.5l8.3-9.7h-3l-5.3 6.2zm0 6.1l10.5-12.3h-1.3l-9.3 10.9.1 1.4z"/>
+    <path opacity=".5" d="M69.95 297.5l10.7-12.8v-2l-10.7 12.6v2.2z"/>
+  </g>
+  <path fill="#A08A64" d="M80.55 255.8h2.5V309h-2.5v-53.2zm11.5 0h3.5V309h-3.5v-53.2z"/>
+  <path fill="#A08A64" d="M69.95 271.4h49.7v3h-49.7v-3z"/>
+  <path fill="#A08A64" d="M106.15 255.8h3V309h-3v-53.2z"/>
+  <g opacity=".4">
+    <defs>
+      <path id="g" d="M22.15 246.6h145.2v1.5H22.15z"/>
+    </defs>
+    <clipPath id="h">
+      <use xlink:href="#g" overflow="visible"/>
+    </clipPath>
+    <path clip-path="url(#h)" fill="#AC8C6B" d="M22.15 246.6h145.2v1.5H22.15v-1.5z"/>
+  </g>
+  <path fill="#323035" d="M22.75 244.3h144.1v2.5H22.75v-2.5z"/>
+  <path opacity=".3" fill="#FFF" d="M69.95 261.1v3l7-8.3h-2.5l-4.5 5.3zm0 5.1l8.9-10.4h-1l-7.9 9.2v1.2zm0 5.1v.1h1.3l9.3-10.8v-1.7l-10.6 12.3v.1zm25.6-10.2v3l7-8.3h-2.4l-4.6 5.3zm0 5.1l8.9-10.4h-1l-7.9 9.2v1.2zm0 5.1v.1h1.3l9.3-10.8v-1.7l-10.6 12.3v.1zm13.6-10.2v3l7-8.3h-2.6l-4.4 5.3zm0 5.1l8.8-10.4h-1l-7.8 9.2v1.2zm0 5.1v.1h1.3l9.2-10.8v-1.7l-10.5 12.3v.1zm-26.1-10.2v3l7-8.3h-2.6l-4.4 5.3zm0 5.1l8.8-10.4h-1l-7.8 9.2v1.2zm0 5.1v.1h1.3l7.7-9.1v-1.7l-9 10.6v.1z"/>
+  <g opacity=".4" fill="#FFF">
+    <path opacity=".7" d="M83.05 279.7v3l7-8.3h-2.6l-4.4 5.3zm0 5l8.8-10.3h-1l-7.7 9.3-.1 1z"/>
+    <path opacity=".5" d="M83.05 293.7l9-10.7v-1.7l-9 10.7v1.7z"/>
+  </g>
+  <g opacity=".4">
+    <path opacity=".7" fill="#FFF" d="M95.55 280.5v3.5l8.2-9.6h-3l-5.2 6.1zm0 6l10.3-12h-1.1l-9.2 10.6v1.4zm0 7.9l10.5-12.5v-2l-10.5 12.4v2.1z"/>
+  </g>
+  <g opacity=".4">
+    <path opacity=".7" fill="#FFF" d="M109.15 280.5v3.5l8.2-9.6h-3l-5.2 6.1zm0 6l10.3-12h-1.1l-9.2 10.6v1.4zm0 7.9l10.5-12.5v-2l-10.5 12.5v2z"/>
+  </g>
+</svg>

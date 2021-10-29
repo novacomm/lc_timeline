@@ -1,0 +1,91 @@
+<div class="page-eu-timeline section-eu-timeline page-eu-timeline-year page-eu-timeline-all eu-timeline-auto-width">
+    <main>
+        <div class="page-content">
+            <div class="ecl-container ecl-u-mv-l">
+                <h1 class="ecl-heading ecl-heading--h1">EU Timeline</h1>
+                <section class="section">
+                    <div class="hide-in-screen print-header">
+                        <h2 class="app-title">EU Timeline</h2>
+                        <h3 class="period-name">{{period ? helperService.periodYearsRangeTitle(period) + period.name : ''}}</h3>
+                    </div>
+                    <div class="events-list">
+                        <ng-container *ngFor="let period of periods; let period_position = index;">
+                            <ng-container *ngFor="let year of period.years; let year_position = index;">
+                                
+                                <ng-container *ngFor="let timeline_event of period.timeline_events; let event_position = index;">
+                                    <ng-container *ngIf="year == helperService.getYearFromDateStr(timeline_event.start_date)">
+                                        <div class="eu-timeline-events-placeholder ecl-container eu-timeline-js-processed">
+                                            <ng-container *ngIf="
+                                                          event_position == 0 || 
+                                                            (
+                                                              event_position > 0 &&
+                                                              helperService.getYearFromDateStr(timeline_event.start_date) !== helperService.getYearFromDateStr(period.timeline_events[event_position-1].start_date)
+                                                            )
+                                                          ">
+                                                <div class="eu-timeline-year-placeholder-heading">
+                                                    <h2>{{helperService.getYearFromDateStr(timeline_event.start_date)}}</h2>
+                                                    <span *ngIf="getEventsFromYear(year).length == 1">{{getEventsFromYear(year).length}} event</span>
+                                                    <span *ngIf="getEventsFromYear(year).length > 1">{{getEventsFromYear(year).length}} events</span>
+                                                </div>
+                                            </ng-container>
+                                            <div class="ecl-container">
+                                                <div class="ecl-row eu-timeline-event-wrapper">
+                                                    <div class="eu-timeline-event eu-timeline-event-txt ecl-col ecl-col-sm-12 ecl-col-md-6 ecl-col-xl-6">
+                                                        <div class="event-category-tags">
+                                                            <div class="item-list">
+                                                                <ul>
+                                                                    <li *ngFor="let _category of timeline_event.category; let _category_position= index;" class="even first last category-{{getCategoryPositionFromID(_category)}}">
+                                                                        {{getCategoryNameFromID(_category)}}</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <h3>{{timeline_event.title}}</h3>
+                                                        <div class="event-date">{{helperService.formatDate(timeline_event.start_date, timeline_event.date_format)}}
+                                                            <span *ngIf="timeline_event.end_date"> - {{helperService.formatDate(timeline_event.end_date, timeline_event.date_format)}}</span>
+                                                        </div>
+                                                        <div class="event-paragraph">
+                                                            <p [innerHTML]="timeline_event.body"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div *ngIf="timeline_event.media.length > 0" class="eu-timeline-event eu-timeline-event-media ecl-col ecl-col-sm-12 ecl-col-md-6 ecl-col-xl-6">
+                                                        <div class="event-media">
+                                                            <span id="file-1379--2" class="file file-image file-image-jpeg file--image">
+                                                                <img alt="" src="{{timeline_event.media[0].url}}">
+                                                                <div>
+                                                                    <div class="ecl-field__body">
+                                                                        {{timeline_event.media[0].caption}}
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="share-edit-btns ecl-col ecl-col-sm-12 ecl-col-md-12 ecl-col-xl-12">
+                                                        <div class="share-edit-btns-inner ecl-col ecl-col-sm-12 ecl-col-md-6 ecl-col-xl-6">
+                                                            <div class="share-block">
+                                                                <div *ngIf="expand_bubble === 'share-event-' + event_position" class="eu-timeline-share-list" data-nosnippet="true">
+                                                                    <ul class="wtShareNetworks">
+                                                                        <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Feuropa.eu%2Flearning-corner%2Feu-timeline%2Fdiscoveries-and-inventions_en&amp;text=Discoveries%20and%20inventions%20%7C%20Learning%20Corner" tabindex="0" rel="noopener noreferrer" title="Twitter" style="cursor: pointer;">Twitter</a></li>
+                                                                        <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_facebook" href="http://www.facebook.com/share.php?u=https%3A%2F%2Feuropa.eu%2Flearning-corner%2Feu-timeline%2Fdiscoveries-and-inventions_en&amp;t=Discoveries%20and%20inventions%20%7C%20Learning%20Corner" tabindex="0" rel="noopener noreferrer" title="Facebook" style="cursor: pointer;">Facebook</a></li>
+                                                                        <li class=""><a class="wtBtnOnlyIco wtSocialNetworkLink wt_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Feuropa.eu%2Flearning-corner%2Feu-timeline%2Fdiscoveries-and-inventions_en&amp;title=Discoveries%20and%20inventions%20%7C%20Learning%20Corner&amp;ro=false&amp;summary=&amp;source=" tabindex="0" rel="noopener noreferrer" title="LinkedIn" style="cursor: pointer;">LinkedIn</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <script type="application/json" data-process="true" data-run="true">
+                                                                { "service": "share", "popup": false, "icon": true, "to": ["twitter", "facebook", "linkedin"], "selection": false, "css": { "list": "eu-timeline-share-list" }, "target": true, "title": "World\u0027s Fair in Paris", "link": "https:\/\/europa.eu\/learning-corner\/eu-timeline\/event\/worlds-fair-in-paris_en" }
+                                                                </script> <a (click)="expand_bubble = 'share-event-' + event_position" class="eu-timeline-share-btn eu-timeline-event-share-btn ecl-icon ecl-icon--rounded ecl-u-bg-secondary icon-share" alt="Share this event"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-container>
+                                </ng-container>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <app-event-form *ngIf="show_add_event"></app-event-form>
+</div>

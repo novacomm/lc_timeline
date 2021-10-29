@@ -1,0 +1,146 @@
+<div id="cboxOverlay" style="opacity: 0.9; cursor: pointer; visibility: visible;"></div>
+<div id="colorbox">
+    <div id="cboxContent">
+        <div id="cboxLoadedContent">
+            <div id="eu-timeline-add-custom-event-form" class="add-event-form page-eu-timeline-form">
+                <h2>{{additionalLabelsService.getLabel('miscelaneous', 'heading_add_an_event')}}</h2>
+                <form accept-charset="UTF-8" action="/learning-corner/eu-timeline/1900_en" class="ecl-container ecl-form" id="teacherscorner-eu-timeline-add-custom-event-form" method="post">
+                    <div id="form-validation"></div>
+                    <div class="ecl-u-mt-m form-item form-item-title form-type-textfield">
+                        <label class="ecl-form-label" for="edit-title">
+                            {{additionalLabelsService.getLabel('miscelaneous', 'label_add_a_title')}} <span class="form-required text-danger" title="This field is required.">
+                                *</span>
+                        </label>
+                        <input class="ecl-text-input form-text required" id="edit-title" maxlength="255" name="title" placeholder="{{additionalLabelsService.getLabel('miscelaneous', 'placeholder_add_your_title_here')}}" size="60" type="text" [(ngModel)]="model.title" #name="ngModel">
+                    </div>
+                    <div class="ecl-u-mt-m form-item form-item-language form-type-select">
+                        <label class="ecl-form-label" for="edit-language">
+                            {{additionalLabelsService.getLabel('miscelaneous', 'label_choose_your_language')}} <span class="form-required text-danger" title="This field is required.">
+                                *</span>
+                        </label>
+                        <select class="ecl-select form-select required" id="edit-language" name="language" placeholder="Select your language">
+                            <option *ngFor="let _label of eu_languages | keyvalue; index as label_position; first as isFirst;" value="{{_label.key}}">{{_label.value}}</option>
+                        </select>
+                    </div>
+                    <div class="field-name-field-eu-timeline-date field-type-date field-widget-date-select form-wrapper" id="edit-date">
+                        <div id="field-eu-timeline-date-add-more-wrapper" class="date-combo">
+                            <legend><span class="fieldset-legend">{{additionalLabelsService.getLabel('miscelaneous', 'label_duration')}} <span class="form-required text-danger" title="This field is required.">
+                                        *</span>
+                                </span>
+                            </legend>
+                            <div class="fieldset-wrapper">
+                                <div class="date-float">
+                                    <div class="form-item form-item-date-und-0-show-todate form-type-checkbox">
+                                        <label class="ecl-checkbox ecl-form-label" for="edit-date-und-0-show-todate">
+                                            <input [(ngModel)]="form_dates.show_end_date" checked="" class="ecl-checkbox__input ecl-u-sr-only form-checkbox" id="edit-date-und-0-show-todate" name="date[und][0][show_todate]" type="checkbox" value="1">
+                                            <span class="ecl-checkbox__label ecl-form-label option">
+                                                {{additionalLabelsService.getLabel('miscelaneous', 'label_show_end_date')}} </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="date-no-float start-date-wrapper container-inline-date">
+                                    <div class="ecl-u-mt-m form-item form-item-date-und-0-value form-type-date-select">
+                                        <div id="edit-date-und-0-value" class="date-padding clearfix">
+                                            <div class="ecl-u-mt-m form-item form-item-date-und-0-value-day form-type-select">
+                                                <label class="ecl-form-label" for="edit-date-und-0-value-day">
+                                                    {{additionalLabelsService.getLabel('miscelaneous', 'label_day')}} <span class="form-required text-danger" title="This field is required.">
+                                                        *</span>
+                                                </label>
+                                                <div class="date-day">
+                                                    <select class="date-clear ecl-select form-select required" name="start_day" [(ngModel)]="form_dates.start_day">
+                                                        <option *ngFor="let form_date of form_dates.month_range" [value]="form_date+1" [selected]="form_date==form_dates.start_day">{{form_date+1}} </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="ecl-u-mt-m form-item form-item-date-und-0-value-month form-type-select">
+                                                <label class="ecl-form-label" for="edit-date-und-0-value-month">
+                                                    {{additionalLabelsService.getLabel('miscelaneous', 'label_month')}} <span class="form-required text-danger" title="This field is required.">
+                                                        *</span>
+                                                </label>
+                                                <div class="date-month">
+                                                    <select class="date-clear ecl-select form-select required" name="start_month" [(ngModel)]="form_dates.start_month">
+                                                        <option *ngFor="let _label of additionalLabelsService.getLabels('month_names') | keyvalue; index as label_position; first as isFirst;" value="{{_label.key}}" [selected]="_label.key==form_dates.start_month">{{_label.value}}</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="ecl-u-mt-m form-item form-item-date-und-0-value-year form-type-select">
+                                                <label class="ecl-form-label" for="edit-date-und-0-value-year">
+                                                    {{additionalLabelsService.getLabel('miscelaneous', 'label_year')}} <span class="form-required text-danger" title="This field is required.">
+                                                        *</span>
+                                                </label>
+                                                <div class="date-year">
+                                                    <select class="date-clear ecl-select form-select required" name="start_year" [(ngModel)]="form_dates.start_year">
+                                                        <option *ngFor="let form_date of form_dates.period_range" [value]="form_date+1901" [selected]="form_date==form_dates.start_year">{{form_date+1901}} </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="date-no-float end-date-wrapper container-inline-date">
+                                    <div *ngIf="form_dates.show_end_date" class="form-item form-item-date-und-0-value2 form-type-date-select">
+                                        <label class="ecl-form-label" for="edit-date-und-0-value2">
+                                            to: </label>
+                                        <div id="edit-date-und-0-value2" class="date-padding clearfix">
+                                            <div class="ecl-u-mt-m form-item form-item-date-und-0-value2-day form-type-select">
+                                                <label class="ecl-form-label" for="edit-date-und-0-value2-day">
+                                                    {{additionalLabelsService.getLabel('miscelaneous', 'label_day')}} </label>
+                                                <div class="date-day">
+                                                    <select class="date-clear ecl-select form-select required" name="end_day" [(ngModel)]="form_dates.end_day">
+                                                        <option *ngFor="let form_date of form_dates.month_range" [value]="form_date+1" [selected]="form_date==form_dates.end_day">{{form_date+1}} </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="ecl-u-mt-m form-item form-item-date-und-0-value2-month form-type-select">
+                                                <label class="ecl-form-label" for="edit-date-und-0-value2-month">
+                                                    {{additionalLabelsService.getLabel('miscelaneous', 'label_month')}} </label>
+                                                <div class="date-month"><select class="date-clear ecl-select form-select required" name="end_month" [(ngModel)]="form_dates.end_month">
+                                                        <option *ngFor="let _label of additionalLabelsService.getLabels('month_names') | keyvalue; index as label_position; first as isFirst;" value="{{_label.key}}" [selected]="_label.key==form_dates.start_month">{{_label.value}}</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="ecl-u-mt-m form-item form-item-date-und-0-value2-year form-type-select">
+                                                <label class="ecl-form-label" for="edit-date-und-0-value2-year">
+                                                    {{additionalLabelsService.getLabel('miscelaneous', 'label_year')}} </label>
+                                                <div class="date-year">
+                                                    <select class="date-clear ecl-select form-select required" name="end_year" [(ngModel)]="form_dates.end_year">
+                                                        <option *ngFor="let form_date of form_dates.period_range" [value]="form_date+1901" [selected]="form_date==form_dates.end_year">{{form_date+1901}} </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-name-field-eu-timeline-category field-type-taxonomy-term-reference field-widget-options-select form-wrapper ecl-u-mt-xl" id="edit-categories">
+                        <div class="ecl-u-mt-m form-item form-item-categories-und form-type-checkboxes">
+                            <label class="ecl-form-label" for="edit-categories-und">
+                                {{additionalLabelsService.getLabel('miscelaneous', 'label_categories')}} <span class="form-required text-danger" title="This field is required.">
+                                    *</span>
+                            </label>
+                            <div aria-labelledby="Category/categories" class="ecl-checkbox-group form-checkboxes required" id="edit-categories-und" role="checkboxgroup" title="Category/categories">
+                                <p class="ecl-u-sr-only" id="edit-categories-und-description">{{additionalLabelsService.getLabel('miscelaneous', 'label_categories')}}</p>
+                                <label *ngFor="let _category of categories; let _category_position= index;" class="checkboxContainer category-{{_category_position+1}} {{helperService.convertToSlug(_category.name)}}">
+                                    <input (click)="toggleCategory(_category, $event)" type="checkbox" id="category-tag-{{_category_position+1}}" value="121" name="category-tag-{{_category_position+1}}">
+                                    <span _ngcontent-oxd-c50="" class="checkbox-text">{{_category.name}}</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ecl-u-mt-l form-item form-item-description form-type-textarea">
+                        <label class="ecl-form-label" for="edit-description">
+                            {{additionalLabelsService.getLabel('miscelaneous', 'label_event_description')}} </label>
+                        <textarea aria-labelledby="edit-description_label" aria-multiline="true" class="ecl-textarea form-textarea" cols="60" name="body" id="edit-description" [(ngModel)]="model.body" name="body" #name="ngModel" placeholder="{{additionalLabelsService.getLabel('miscelaneous', 'placeholder_add_your_text_here')}}" role="textbox" rows="5" title="Event description"></textarea>
+                    </div>
+                    <div class="form-actions" id="edit-actions">
+                        <button (click)="submitEvent()" class="ecl-button ecl-button--form form-button-submit ajax-processed" id="edit-submit--2" name="create" type="submit" value="Add to timeline">
+                            {{additionalLabelsService.getLabel('miscelaneous', 'button_add_to_timeline')}}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button type="button" id="cboxClose" [routerLink]="['../']">close</button>
+    </div>
+</div>

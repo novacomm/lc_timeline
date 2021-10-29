@@ -1,0 +1,9 @@
+<div class="view view-1 view-id-1 view-display-id-categories timeline-category-buttons ecl-container">
+    <div class="view-content">
+        <div *ngFor="let category of categories; let category_position= index;" class="ecl-col ecl-col-sm-6 ecl-col-md-4 ecl-col-xl-4" [routerLink]="['/categories', helperService.convertToSlug(category.name)]">
+            <a class="ecl-link category-{{category_position+1}} {{helperService.convertToSlug(category.name)}}">
+                {{category.name}}
+            </a>
+        </div>
+    </div>
+</div>

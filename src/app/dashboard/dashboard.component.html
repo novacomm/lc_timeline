@@ -1,0 +1,73 @@
+<div class="overview-page">
+    <div class="section-eu-timeline">
+        <main>
+            <section class="section">
+                <div class="ecl-container ecl-u-mv-l share-print-btns-wrapper">
+                  <app-top-buttons></app-top-buttons>
+                </div>
+                <article class="node node-188 node-page node__preview view-mode-full" id="node-188" lang="en" role="article">
+                    <header>
+                        <span content="EU Timeline Overview" property="dc:title"></span>
+                        <span content="0" datatype="xsd:integer" property="sioc:num_replies"></span>
+                    </header>
+                    <div class="content">
+                        <div>
+                            <div class="ecl-field__body">
+                                <div>
+                                    <div class="eu-timeline-text-wrapper">
+                                        <div class="eu-timeline-text" [innerHTML]="timeline_homepage_body">
+                                        </div>
+                                        <div class="eu-timeline-img">
+                                            <p></p>
+                                            <div class="media media-default media-element-container" style="width: 362px; height: 352px;">
+                                                <span id="file-697" class="file file-image file-image-png file--image">
+                                                    <img alt="" height="352" src="{{helperService.assets_location}}/ahora360x350_en.png" typeof="foaf:Image" width="362">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <section class="block-quicktabs block-quicktabs-eu-timeline-navigation-tabs block__content ecl-clearfix odd weight-1" id="block-quicktabs-eu-timeline-navigation-tabs">
+                    <div class="block__content ecl-editor">
+                        <div id="quicktabs-eu_timeline_navigation_tabs" class="quicktabs-wrapper quicktabs-style-nostyle jquery-once-1-processed">
+                            <div class="item-list">
+                                <ul class="quicktabs-style-nostyle quicktabs-tabs">
+                                    <li [ngClass]="{'active' : tab_focus === 0}">
+                                        <a [ngClass]="{'active' : tab_focus === 0, 'ecl-link quicktabs-tab quicktabs-tab-block quicktabs-loaded jquery-once-2-processed' : 1}" (click)="showTab(0)" id="quicktabs-tab-eu_timeline_navigation_tabs-0">{{additionalLabelsService.getLabel('miscelaneous', 'heading_navigate_by_period')}}<span *ngIf="tab_focus === 0" id="active-quicktabs-tab" class="element-invisible">(active tab)</span></a>
+                                    </li>
+                                    <li [ngClass]="{'active' : tab_focus === 1}">
+                                        <a [ngClass]="{'active' : tab_focus === 1, 'ecl-link quicktabs-tab quicktabs-tab-block quicktabs-loaded jquery-once-2-processed' : 1}" (click)="showTab(1)" id="quicktabs-tab-eu_timeline_navigation_tabs-1">{{additionalLabelsService.getLabel('miscelaneous', 'heading_navigate_by_category')}}<span *ngIf="tab_focus === 1" id="active-quicktabs-tab" class="element-invisible">(active tab)</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="quicktabs-container-eu_timeline_navigation_tabs" class="quicktabs_main quicktabs-style-nostyle">
+                                <div id="quicktabs-tabpage-eu_timeline_navigation_tabs-0" [ngClass]="{'quicktabs-hide' : tab_focus !== 0, 'quicktabs-tabpage' : 1}">
+                                    <box-periods></box-periods>
+                                </div>
+                                <div id="quicktabs-tabpage-eu_timeline_navigation_tabs-1" [ngClass]="{'quicktabs-hide' : tab_focus !== 1, 'quicktabs-tabpage' : 1}">
+                                    <box-categories></box-categories>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="block-teacherscorner-eu-timeline block-teacherscorner-eu-timeline-eu-timeline-faqs-accordion block__content ecl-clearfix even last weight-2" id="block-teacherscorner-eu-timeline-eu-timeline-faqs-accordion">
+                    <h3 class="block__title">EU Timeline FAQs accordions</h3>
+                    <div class="block__content ecl-editor">
+                        <div id="quickset-dynamic_quicktabs_menu" class="quick-accordion jquery-once-3-processed ui-accordion ui-widget ui-helper-reset" role="tablist">
+                            <ng-container *ngFor="let faq of faqs; let faq_position=index;">
+                                <h3 [ngClass]="{'ui-accordion-header-active ui-state-active' : expand_faq == faq_position, 'ui-accordion-header ui-helper-reset ui-state-default  ui-corner-top ui-accordion-icons' : 1}" role="tab" id="ui-accordion-quickset-dynamic_quicktabs_menu-header-0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span><a (click)="expand_faq = faq_position">{{faq.name}}</a></h3>
+                                <div [hidden]="!expand_faq == faq_position" [ngClass]="{'ui-accordion-content-active' : expand_faq == faq_position, 'ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom' : 1}" id="ui-accordion-quickset-dynamic_quicktabs_menu-panel-0" aria-labelledby="ui-accordion-quickset-dynamic_quicktabs_menu-header-0" role="tabpanel" [innerHTML]="faq.body">
+                                </div>
+                            </ng-container>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+</div>
