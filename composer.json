@@ -1,0 +1,16 @@
+{
+    "name": "novacomm/lc_timeline",
+    "description": "Learning corner JS Timeline",
+    "type": "library",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Ivan Chaer",
+            "email": "ivan.chaer@novacomm-europa.eu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0"
+    }
+}
