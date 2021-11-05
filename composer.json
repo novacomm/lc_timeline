@@ -1,7 +1,7 @@
 {
     "name": "novacomm/lc_timeline",
     "description": "Learning corner JS Timeline",
-    "type": "library",
+    "type": "drupal-library",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "license": "GPL-3.0",
